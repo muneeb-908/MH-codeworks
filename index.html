@@ -34,6 +34,734 @@
     <style>
 
     </style>
+    <style>
+/*==================================================
+                MH TEAM SECTION
+==================================================*/
+
+.mh-team{
+
+    position: relative;
+
+    padding: 120px 0;
+
+    overflow: hidden;
+
+    background: linear-gradient(
+        180deg,
+        #0d6efd 0%,
+        #0d6efd 100%
+    );
+
+}
+
+.mh-team::before{
+
+    content: "";
+
+    position: absolute;
+
+    width: 600px;
+
+    height: 600px;
+
+    top: -250px;
+
+    right: -220px;
+
+    border-radius: 50%;
+
+    background: #0d6efd;
+
+    filter: blur(180px);
+
+    pointer-events: none;
+
+}
+
+.mh-team::after{
+
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+
+    height: 500px;
+
+    left: -180px;
+
+    bottom: -180px;
+
+    border-radius: 50%;
+
+    background: #0d6efd;
+
+    filter: blur(170px);
+
+    pointer-events: none;
+
+}
+
+.mh-team .container{
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+/*==================================================
+                HEADER
+==================================================*/
+
+.mh-team-header{
+
+    text-align: center;
+
+    max-width: 760px;
+
+    margin: 0 auto 70px;
+
+}
+
+.mh-team-header small{
+
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    color: #60a5fa;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+}
+
+.mh-team-header h2{
+
+    margin-bottom: 18px;
+
+    color: #ffffff;
+
+    font-size: 48px;
+
+    font-weight: 800;
+
+    line-height: 1.2;
+
+}
+
+.mh-team-header h2 span{
+
+    background: linear-gradient(
+        135deg,
+        #3b82f6,
+        #7c3aed
+    );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+}
+
+.mh-team-header p{
+
+    color: #b9c6dc;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+
+}
+
+
+/*==================================================
+                TEAM GRID
+==================================================*/
+
+.mh-team-grid{
+
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0,1fr));
+
+    gap: 30px;
+
+    align-items: stretch;
+
+}
+
+
+/*==================================================
+                TEAM CARD
+==================================================*/
+
+.mh-team-card{
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    width: 100%;
+
+    min-height: 430px;
+
+    padding: 40px 28px;
+
+    text-align: center;
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    background: #0d6efd;
+
+    backdrop-filter: blur(18px);
+
+    border: 1px solid white;
+
+    transition: .45s ease;
+
+}
+
+.mh-team-card::before{
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    opacity: 0;
+
+    background: linear-gradient(
+        135deg,
+        #0d6efd,
+        transparent,
+        #0d6efd
+    );
+
+    transition: .45s;
+
+    pointer-events: none;
+
+}
+
+.mh-team-card:hover{
+
+    transform: translateY(-12px);
+
+    border-color: rgba(59,130,246,.35);
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,.35),
+        0 0 25px rgba(59,130,246,.15);
+
+}
+
+.mh-team-card:hover::before{
+
+    opacity: 1;
+
+}
+/*==================================================
+                TEAM ICON
+==================================================*/
+
+.mh-team-icon{
+
+    width:90px;
+
+    height:90px;
+
+    margin:0 auto 28px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:22px;
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    color:#ffffff;
+
+    font-size:36px;
+
+    box-shadow:
+        0 15px 35px rgba(37,99,235,.30);
+
+    transition:.45s ease;
+
+}
+
+.mh-team-card:hover .mh-team-icon{
+
+    transform:rotate(10deg) scale(1.08);
+
+    box-shadow:
+        0 18px 45px rgba(37,99,235,.45);
+
+}
+
+
+/*==================================================
+                NAME
+==================================================*/
+
+.mh-team-name{
+
+    margin:0 0 10px;
+
+    color:#ffffff;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    line-height:1.3;
+
+}
+
+
+/*==================================================
+                ROLE
+==================================================*/
+
+.mh-team-role{
+
+    display:inline-block;
+
+    margin-bottom:28px;
+
+    color:#60a5fa;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+}
+
+
+/*==================================================
+                SKILLS
+==================================================*/
+
+.mh-team-skills{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:auto;
+
+    margin-bottom:30px;
+
+}
+
+.mh-team-skills span{
+
+    padding:9px 16px;
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:#dbeafe;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    transition:.35s ease;
+
+}
+
+.mh-team-skills span:hover{
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    color:#ffffff;
+
+    border-color:transparent;
+
+    transform:translateY(-3px);
+
+}
+
+
+/*==================================================
+                CARD SHINE
+==================================================*/
+
+.mh-team-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:-140%;
+
+    left:-60%;
+
+    width:80px;
+
+    height:340%;
+
+    background:rgba(255,255,255,.10);
+
+    transform:rotate(25deg);
+
+    transition:1s;
+
+    pointer-events:none;
+
+}
+
+.mh-team-card:hover::after{
+
+    left:170%;
+
+}
+
+
+/*==================================================
+                CONTENT LAYER
+==================================================*/
+
+.mh-team-card > *{
+
+    position:relative;
+
+    z-index:2;
+
+}
+/*==================================================
+                SOCIAL LINKS
+==================================================*/
+
+.mh-team-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:16px;
+
+    margin-top:auto;
+
+    position:relative;
+
+    z-index:20;
+
+}
+
+.mh-team-link{
+
+    width:48px;
+
+    height:48px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-decoration:none;
+
+    border-radius:50%;
+
+    color:#ffffff;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(12px);
+
+    transition:.35s ease;
+
+    cursor:pointer;
+
+}
+
+.mh-team-link i{
+
+    font-size:18px;
+
+    pointer-events:none;
+
+}
+
+.mh-team-link:hover{
+
+    color:#ffffff;
+
+    border-color:transparent;
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    transform:translateY(-6px);
+
+    box-shadow:
+        0 15px 35px rgba(37,99,235,.35);
+
+}
+
+
+/*==================================================
+                CARD ANIMATION
+==================================================*/
+
+@keyframes mhFloat{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-16px);
+
+    }
+
+    100%{
+
+        transform:translateY(-12px);
+
+    }
+
+}
+
+.mh-team-card:hover{
+
+    animation:mhFloat .8s ease;
+
+}
+
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(max-width:992px){
+
+.mh-team-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.mh-team{
+
+    padding:90px 0;
+
+}
+
+.mh-team-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.mh-team-header{
+
+    margin-bottom:50px;
+
+}
+
+.mh-team-header h2{
+
+    font-size:38px;
+
+}
+
+.mh-team-card{
+
+    min-height:auto;
+
+    padding:35px 25px;
+
+}
+
+.mh-team-icon{
+
+    width:80px;
+
+    height:80px;
+
+    font-size:32px;
+
+}
+
+.mh-team-name{
+
+    font-size:24px;
+
+}
+
+.mh-team-role{
+
+    font-size:13px;
+
+}
+
+.mh-team-link{
+
+    width:44px;
+
+    height:44px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.mh-team{
+
+    padding:80px 0;
+
+}
+
+.mh-team-header h2{
+
+    font-size:30px;
+
+}
+
+.mh-team-header p{
+
+    font-size:15px;
+
+}
+
+.mh-team-card{
+
+    padding:30px 20px;
+
+}
+
+.mh-team-skills{
+
+    gap:8px;
+
+}
+
+.mh-team-skills span{
+
+    font-size:11px;
+
+    padding:8px 12px;
+
+}
+
+.mh-team-link{
+
+    width:42px;
+
+    height:42px;
+
+}
+
+}
+
+
+/*==================================================
+                CLICK FIX
+==================================================*/
+
+.mh-team::before,
+.mh-team::after,
+.mh-team-card::before,
+.mh-team-card::after{
+
+    pointer-events:none;
+
+}
+
+.mh-team-card>*{
+
+    position:relative;
+
+    z-index:5;
+
+}
+
+.mh-team-links{
+
+    z-index:100;
+
+}
+
+.mh-team-link{
+
+    pointer-events:auto;
+
+}
+
+
+/*==================================================
+                ACCESSIBILITY
+==================================================*/
+
+.mh-team-link:focus-visible{
+
+    outline:2px solid #60a5fa;
+
+    outline-offset:4px;
+
+}
+    
+
+</style>
 
 </head>
 
@@ -140,7 +868,7 @@
 
             </ul>
 
-            <a href="#" class="nav-btn">
+            <a href="https://wa.me/923426263960" target="_blank" class="nav-btn">
                 Let's Talk
             </a>
 
@@ -590,45 +1318,45 @@ AI PLATFORM
         </div>
 
     </section>
-    <!--========================================
+ <!--========================================
             TEAM SECTION
 =========================================-->
 
-    <section class="team-section" id="team">
+<section class="mh-team" id="team">
 
     <div class="container">
 
-        <div class="section-header">
+        <div class="mh-team-header">
 
-            <span class="section-subtitle">
+            <small>
                 OUR TEAM
-            </span>
+            </small>
 
             <h2>
                 Meet The <span>Experts</span>
             </h2>
 
             <p>
-               Partner with MH Codeworks to experience cutting-edge technology, premium design, and reliable development services focused on delivering measurable business success.
+                Partner with MH Codeworks to experience cutting-edge technology, premium design, and reliable development services focused on delivering measurable business success.
             </p>
 
         </div>
 
-        <div class="team-grid">
+        <div class="mh-team-grid">
 
             <!-- CARD 1 -->
 
-            <div class="team-card">
+            <div class="mh-team-card">
 
-                <div class="team-icon">
-    <i class="fa-solid fa-code"></i>
-</div>
+                <div class="mh-team-icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
 
-                <h3>Muhammad Haris</h3>
+                <h3 class="mh-team-name">Muhammad Haris</h3>
 
-                <h5>Frontend Developer</h5>
+                <h5 class="mh-team-role">Frontend Developer</h5>
 
-                <div class="team-skills">
+                <div class="mh-team-skills">
 
                     <span>HTML5</span>
                     <span>CSS3</span>
@@ -638,13 +1366,17 @@ AI PLATFORM
 
                 </div>
 
-                <div class="team-social">
+                <div class="mh-team-links">
 
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a class="mh-team-link" href="https://github.com/haris0302"><i class="fa-brands fa-github"></i></a>
 
-                    <a href="#https://www.linkedin.com/in/haris-akseer-52573241a/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a class="mh-team-link" href="https://www.linkedin.com/in/haris-akseer-52573241a/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
 
-                    <a href="#mailto:harisakseer0@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a class="mh-team-link" href="mailto:harisakseer0@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
 
                 </div>
 
@@ -652,16 +1384,17 @@ AI PLATFORM
 
             <!-- CARD 2 -->
 
-            <div class="team-card">
+            <div class="mh-team-card">
 
-               <div class="team-icon">
-   <i class="fa-solid fa-bezier-curve"></i>
-</div>
-                <h3>Medhat Ghaffar</h3>
+                <div class="mh-team-icon">
+                    <i class="fa-solid fa-bezier-curve"></i>
+                </div>
 
-                <h5>UI / UX Designer</h5>
+                <h3 class="mh-team-name">Medhat Ghaffar</h3>
 
-                <div class="team-skills">
+                <h5 class="mh-team-role">UI / UX Designer</h5>
+
+                <div class="mh-team-skills">
 
                     <span>Figma</span>
                     <span>Canva</span>
@@ -671,13 +1404,19 @@ AI PLATFORM
 
                 </div>
 
-                <div class="team-social">
+                <div class="mh-team-links">
 
-                    <a href="#https://github.com/MedhatGhaffar"><i class="fa-brands fa-github"></i></a>
+                    <a class="mh-team-link" href="https://github.com/MedhatGhaffar" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
 
-                    <a href="#https://www.linkedin.com/in/medhat-ghaffar-18176b41b/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a class="mh-team-link" href="https://www.linkedin.com/in/medhat-ghaffar-18176b41b/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
 
-                    <a href="#mailto:medhatghaffar0@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a class="mh-team-link" href="mailto:medhatghaffar0@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
 
                 </div>
 
@@ -685,18 +1424,17 @@ AI PLATFORM
 
             <!-- CARD 3 -->
 
-            <div class="team-card">
+            <div class="mh-team-card">
 
-                <div class="team-icon">
-    <i class="fa-solid fa-database"></i>
-</div>
+                <div class="mh-team-icon">
+                    <i class="fa-solid fa-database"></i>
+                </div>
 
+                <h3 class="mh-team-name">Minhal Raees</h3>
 
-                <h3>Minhal Raees</h3>
+                <h5 class="mh-team-role">Database Administrator</h5>
 
-                <h5>Database Administrator</h5>
-
-                <div class="team-skills">
+                <div class="mh-team-skills">
 
                     <span>MySQL</span>
                     <span>SQL</span>
@@ -706,13 +1444,19 @@ AI PLATFORM
 
                 </div>
 
-                <div class="team-social">
+                <div class="mh-team-links">
 
-                    <a href="#http://github.com/minhalraees-dev"><i class="fa-brands fa-github"></i></a>
+                    <a class="mh-team-link" href="https://github.com/minhalraees-dev" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
 
-                    <a href="#https://www.linkedin.com/in/minhal-raees-b0026141b"><i class="fa-brands fa-linkedin"></i></a>
+                    <a class="mh-team-link" href="https://www.linkedin.com/in/minhal-raees-b0026141b" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
 
-                    <a href="#mailto:minhalraees@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a class="mh-team-link" href="mailto:minhalraees@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
 
                 </div>
 
@@ -720,33 +1464,39 @@ AI PLATFORM
 
             <!-- CARD 4 -->
 
-            <div class="team-card">
+            <div class="mh-team-card">
 
-               <div class="team-icon">
-    <i class="fa-solid fa-server"></i>
-</div>
+                <div class="mh-team-icon">
+                    <i class="fa-solid fa-server"></i>
+                </div>
 
-                <h3>Muneeb Ahmed</h3>
+                <h3 class="mh-team-name">Muneeb Ahmed</h3>
 
-                <h5>Backend Developer</h5>
+                <h5 class="mh-team-role">Backend Developer</h5>
 
-                <div class="team-skills">
+                <div class="mh-team-skills">
 
                     <span>PHP</span>
-                    <span>Crud</span>
+                    <span>CRUD</span>
                     <span>MySQL</span>
                     <span>REST API</span>
                     <span>Authentication</span>
 
                 </div>
 
-                <div class="team-social">
+                <div class="mh-team-links">
 
-                    <a href="#https://github.com/muneeb-908"><i class="fa-brands fa-github"></i></a>
+                    <a class="mh-team-link" href="https://github.com/muneeb-908" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
 
-                    <a href="#https://www.linkedin.com/in/muneeb-ahmed-0bb35841a/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a class="mh-team-link" href="https://www.linkedin.com/in/muneeb-ahmed-0bb35841a/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
 
-                    <a href="#mailto:muneebkhi908@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a class="mh-team-link" href="mailto:muneebkhi908@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
 
                 </div>
 
@@ -754,16 +1504,17 @@ AI PLATFORM
 
             <!-- CARD 5 -->
 
-            <div class="team-card">
+            <div class="mh-team-card">
 
-               <div class="team-icon">
-    <i class="fa-solid fa-chart-line"></i>
-</div>
-                <h3>Maham Mansoor</h3>
+                <div class="mh-team-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
 
-                <h5>SEO Specialist</h5>
+                <h3 class="mh-team-name">Maham Mansoor</h3>
 
-                <div class="team-skills">
+                <h5 class="mh-team-role">SEO Specialist</h5>
+
+                <div class="mh-team-skills">
 
                     <span>Keyword Research</span>
                     <span>Technical SEO</span>
@@ -773,13 +1524,19 @@ AI PLATFORM
 
                 </div>
 
-                <div class="team-social">
+                <div class="mh-team-links">
 
-                    <a href="#https://github.com/mansoormaham065-png"><i class="fa-brands fa-github"></i></a>
+                    <a class="mh-team-link" href="https://github.com/mansoormaham065-png" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
 
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a class="mh-team-link" href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
 
-                    <a href="#mailto:mansoormaham065@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a class="mh-team-link" href="mailto:mansoormaham065@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
 
                 </div>
 
@@ -1189,7 +1946,7 @@ document.getElementById("closePopup").onclick = function () {
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
 
-                    <a href="#" target="_blank">
+                    <a href="#https://www.instagram.com/mh_codeworks/" target="_blank">
                         <i class="fa-brands fa-instagram"></i>
                     </a>
 

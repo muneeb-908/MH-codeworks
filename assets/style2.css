@@ -392,6 +392,7 @@ body::after{
 }
 
 
+
 /*==================================================
                     COMMON
 ==================================================*/
@@ -7817,7 +7818,7 @@ p{
         #091322
     );
 
-    overflow:hidden;
+    overflow:visible;
 
 }
 
@@ -7897,7 +7898,7 @@ p{
 
     position:relative;
 
-    overflow:hidden;
+    overflow:visible;
 
     border-radius:30px;
 
@@ -8209,7 +8210,7 @@ p{
 
     position:relative;
 
-    overflow:hidden;
+    overflow:visible;
 
     isolation:isolate;
 
@@ -9557,7 +9558,7 @@ p{
 
     padding:120px 0;
 
-    overflow:hidden;
+    overflow:visible;
 
     background:
     linear-gradient(
@@ -9629,7 +9630,7 @@ p{
 
     position:relative;
 
-    overflow:hidden;
+    overflow:visible;
 
     padding:70px;
 
@@ -12406,6 +12407,8 @@ body{
 /*==================================================
             END PART 5.5
 ==================================================*/
+
+
 
 /*==================================================
         MH CODEWORKS CSS FRAMEWORK
